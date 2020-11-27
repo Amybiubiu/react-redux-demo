@@ -6,15 +6,15 @@ const Footer = ({ filter, onFilterClicked }) => {
       return name;
     }
     return (
-      <a
-        href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          onFilterClicked(filter);
+      <span
+        onClick={() =>{
+          // console.log("clicked");
+          onFilterClicked(filterProp)
         }}
+        style={{color: 'blue'}}
       >
         {name}
-      </a>
+      </span>
     );
   }
   return (

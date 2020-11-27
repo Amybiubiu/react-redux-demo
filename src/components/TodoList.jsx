@@ -5,7 +5,7 @@ const TodoList = ({ onTodoClicked, todos }) => {
     <ul>
       {todos&& todos.map((todo, index) => (
         <li
-          onClick={onTodoClicked(index)}
+          onClick={() => onTodoClicked(index)}
           style={{
             textDecoration: todo.completed ? "line-through" : "none",
             cursor: todo.completed ? "default" : "pointer",

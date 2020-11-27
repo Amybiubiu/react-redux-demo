@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-const rootReducer = combineReducers(todos, visibilityFilter);
+const rootReducer = combineReducers({ todos, visibilityFilter });
 function todos(state = [], action){
     switch(action.type){
         case 'ADD_TODO':

@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import './App.css';
 import {
   addTodo,
   completeTodo,
@@ -12,7 +11,7 @@ import Footer from './components/Footer';
 
 const App = ({ dispatch, visibleTodos, visibilityFilter }) => {
   return (
-    <div className="App">
+    <div className="App" style={{marginLeft: "100px"}}>
       <AddTodo
         onAddClicked={
           text => dispatch(addTodo(text))
